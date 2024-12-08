@@ -7,9 +7,9 @@
 #include <iostream>
 #include "const.h"
 #include <memory>
-namespace interpretator {
+namespace LispEnv {
     enum valuetype {
-        INT, DOUBLE, STRING, NIL
+        INT, DOUBLE, STRING, NIL, NULLNODE
     };
     class Atom {
     private:
@@ -19,7 +19,7 @@ namespace interpretator {
             double doublevalue;
             std::string stringvalue;
             Nil *nilvalue;
-//            Pair *pairvalue;
+            Nullnode* nullnodevalue;
         };
     public:
         Atom(long long int val);
@@ -30,9 +30,9 @@ namespace interpretator {
 
         Atom(Nil *val);
 
-        Atom(valuetype val);
+        Atom(Nullnode *val);
 
-//        Atom(Pair *val);
+        Atom(valuetype val);
 
         ~Atom();
 
@@ -40,7 +40,7 @@ namespace interpretator {
 
         void init();
 
-        valuetype get_type();
+        valuetype get_type() ;
 
         Atom &operator=(const long long int a);
 
@@ -50,9 +50,9 @@ namespace interpretator {
 
         Atom &operator+=(const char a);
 
-        Atom &operator+(Atom a);
+        Atom operator+(const Atom& a)const ;
 
-        Atom &operator+=(Atom a);
+        Atom &operator+=(const Atom& a);
 
         Atom(const Atom& other);
 

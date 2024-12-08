@@ -2,7 +2,9 @@
 // Created by hasni on 04.12.2024.
 //
 #include "tree.h"
-namespace interpretator {
+namespace LispEnv {
+    Atom* nullatom=new Atom(nullnode);
+    Tree* nulltree=new Tree(nullatom);
     bool Tree::set_left(Tree *val) {
         left = val;
         return true;
@@ -26,12 +28,7 @@ namespace interpretator {
         return root;
     }
 
-    bool Tree::set_direction(bool direct) {
-        direction = direct;
-        return true;
-    }
-
-    Tree *Tree::add(Tree *val) {
+    Tree *Tree::add(Tree *val,bool direction) {
         if (direction) {
             if (set_right(val)) {
                 right->root = this;
@@ -47,7 +44,7 @@ namespace interpretator {
         return nullptr;
     }
 
-    Tree::Tree(Atom *val) : data(val) {}
+    Tree::Tree(Atom *val) : data(val), left(nulltree),right(nulltree) {}
 
     valuetype Tree::get_type() {
         if (data== nullptr)
@@ -61,5 +58,11 @@ namespace interpretator {
 
     Tree *Tree::get_left() {
         return left;
+    }
+
+    Tree* Tree::copy_data(const Tree *other) {
+        if (this == other) return this;  // Защита от самоприсваивания
+        *data=*other->data;
+        return this;
     }
 };

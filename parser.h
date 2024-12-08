@@ -6,7 +6,7 @@
 #define INTERPRETER_LISP_PARSER_H
 #include "tree.h"
 #include <stack>
-namespace interpretator {
+namespace LispEnv {
     class Parser {
     private:
         std::string code;

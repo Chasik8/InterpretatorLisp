@@ -2,7 +2,7 @@
 // Created by hasni on 04.12.2024.
 //
 #include "const.h"
-namespace interpretator {
+namespace LispEnv {
     Nil *nil = new Nil();
-    Pair *pair = new Pair();
+    Nullnode* nullnode =new Nullnode();
 }

@@ -4,14 +4,10 @@
 
 #ifndef INTERPRETER_LISP_CONST_H
 #define INTERPRETER_LISP_CONST_H
-namespace interpretator {
-    class Pair {
-    };
-
-    class Nil {
-    };
-
+namespace LispEnv {
+    class Nil {};
+    class Nullnode{};
+    extern Nullnode* nullnode;
     extern Nil *nil;
-    extern Pair *pair;
 }
 #endif //INTERPRETER_LISP_CONST_H

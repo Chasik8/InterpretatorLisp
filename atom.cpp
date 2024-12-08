@@ -2,7 +2,7 @@
 // Created by hasni on 04.12.2024.
 //
 #include "atom.h"
-namespace interpretator {
+namespace LispEnv {
     void Atom::clear() {
         if (type == STRING) {
             stringvalue.~basic_string(); // Освобождаем память строки
@@ -129,7 +129,7 @@ namespace interpretator {
         clear();
     }
 
-//    Atom::Atom(Pair *val) : type(PAIR), pairvalue(val) {}
+    Atom::Atom(Nullnode *val) : type(NULLNODE), nullnodevalue(val) {}
 
     Atom::Atom(Nil *val) : type(NIL), nilvalue(val) {}
 
@@ -165,9 +165,7 @@ namespace interpretator {
         if (this == &other) return *this;  // Защита от самоприсваивания
 
         // Освобождаем старые данные, если они есть
-        if (type == STRING) {
-            stringvalue.~basic_string();  // Явный вызов деструктора
-        }
+        clear();
 
         type = other.type;
         switch (type) {
@@ -188,8 +186,8 @@ namespace interpretator {
         return *this;
     }
 
-    Atom &Atom::operator+=(Atom a) {
-        if (type !=a.get_type()){
+    Atom &Atom::operator+=(const Atom& a) {
+        if (get_type() !=a.type){
             std::cout<<"error type +="<<std::endl;
         }else {
             switch (type) {
@@ -204,10 +202,13 @@ namespace interpretator {
                     break;
             }
         }
+        return *this;
     }
 
-    Atom &Atom::operator+(Atom a) {
-        *this+=a;
+    Atom Atom::operator+(const Atom& a)const {
+        Atom ans= Atom(*this);
+        ans+=a;
+        return ans;
     }
 
     Atom::Atom(valuetype val) {
@@ -227,12 +228,4 @@ namespace interpretator {
                 break;
         }
     }
-
-//    Atom::Atom(Atom* at) {
-//        type=at->type;
-//        intvalue=at->intvalue;
-//        doublevalue=at->doublevalue;
-//        stringvalue=at->stringvalue;
-//        nilvalue=at->nilvalue;
-//    }
 }

@@ -1,4 +1,4 @@
 "D:\Soft\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/Soft/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe" "-DCMAKE_C_COMPILER=C:/Program Files/LLVM/bin/clang-cl.exe" "-DCMAKE_CXX_COMPILER=C:/Program Files/LLVM/bin/clang-cl.exe" -G Ninja -S D:\Project\C++\CLion\Interpreter_lisp -B D:\Project\C++\CLion\Interpreter_lisp\cmake-build-debug
--- Configuring done (0.1s)
+-- Configuring done (0.0s)
 -- Generating done (0.0s)
 -- Build files have been written to: D:/Project/C++/CLion/Interpreter_lisp/cmake-build-debug

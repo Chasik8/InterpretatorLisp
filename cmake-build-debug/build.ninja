@@ -84,6 +84,13 @@ build CMakeFiles\Interpreter_lisp.dir\parser.cpp.obj: CXX_COMPILER__Interpreter_
   TARGET_COMPILE_PDB = CMakeFiles\Interpreter_lisp.dir\
   TARGET_PDB = Interpreter_lisp.pdb
 
+build CMakeFiles\Interpreter_lisp.dir\interpretator.cpp.obj: CXX_COMPILER__Interpreter_lisp_unscanned_Debug D$:\Project\C++\CLion\Interpreter_lisp\interpretator.cpp || cmake_object_order_depends_target_Interpreter_lisp
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
+  OBJECT_DIR = CMakeFiles\Interpreter_lisp.dir
+  OBJECT_FILE_DIR = CMakeFiles\Interpreter_lisp.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Interpreter_lisp.dir\
+  TARGET_PDB = Interpreter_lisp.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Interpreter_lisp
@@ -92,7 +99,7 @@ build CMakeFiles\Interpreter_lisp.dir\parser.cpp.obj: CXX_COMPILER__Interpreter_
 #############################################
 # Link the executable Interpreter_lisp.exe
 
-build Interpreter_lisp.exe: CXX_EXECUTABLE_LINKER__Interpreter_lisp_Debug CMakeFiles\Interpreter_lisp.dir\main.cpp.obj CMakeFiles\Interpreter_lisp.dir\tree.cpp.obj CMakeFiles\Interpreter_lisp.dir\atom.cpp.obj CMakeFiles\Interpreter_lisp.dir\const.cpp.obj CMakeFiles\Interpreter_lisp.dir\parser.cpp.obj
+build Interpreter_lisp.exe: CXX_EXECUTABLE_LINKER__Interpreter_lisp_Debug CMakeFiles\Interpreter_lisp.dir\main.cpp.obj CMakeFiles\Interpreter_lisp.dir\tree.cpp.obj CMakeFiles\Interpreter_lisp.dir\atom.cpp.obj CMakeFiles\Interpreter_lisp.dir\const.cpp.obj CMakeFiles\Interpreter_lisp.dir\parser.cpp.obj CMakeFiles\Interpreter_lisp.dir\interpretator.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

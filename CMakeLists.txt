@@ -10,4 +10,6 @@ add_executable(Interpreter_lisp main.cpp
         atom.cpp
         const.cpp
         parser.h
-        parser.cpp)
+        parser.cpp
+        interpretator.h
+        interpretator.cpp)

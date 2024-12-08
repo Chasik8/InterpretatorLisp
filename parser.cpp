@@ -2,7 +2,7 @@
 // Created by hasni on 04.12.2024.
 //
 #include "parser.h"
-namespace interpretator{
+namespace LispEnv{
 void Parser::update_atom(Tree *root, Atom *atom, bool &flag_init_atom) const {
     if (flag_init_atom){
         atom->define();
@@ -21,18 +21,19 @@ int Parser::run(Tree *root) {
     // добавлять только туда (пример если было 123, после 1 мы сразу знаем что это число, тогда меням флаг на то,
     // что тип определн и добавлемя его сразу в atom, тогда можно добавить тип функции,
     // что уберет вычиление хеша для unordered_map)
+    // можно удалить direction из дерева и сделать временной переменной,
+    // ведь он не где не исоьзуеться, а внутри скобок всегда должна быть запятая (,).
     for (unsigned long long int i=0;i<code.size();++i){
         if (code[i]!=' '){
             switch (code[i]) {
                 case '(':
                     update_atom(root, atom, flag_init_atom);
-                    root=root->add(new Tree(new Atom(nil)));
+                    root=root->add(new Tree(new Atom(nil)),false);
                     break;
                 case ',':
                     update_atom(root, atom, flag_init_atom);
                     root=root->get_root();
-                    root->set_direction(true);
-                    root=root->add(new Tree(new Atom(nil)));
+                    root=root->add(new Tree(new Atom(nil)),true);
                     break;
                 case ')':
                     update_atom(root, atom, flag_init_atom);
