@@ -13,6 +13,7 @@
 #include <any>
 #include "parser.h"
 namespace LispEnv {
+//Сделано!
 // Надо переделать, что бы возвращал Atom, тогда значения функции подгружаются на лету
 // и тогда есть возможность разграничить список списков.
     std::pair<Tree*,bool>solution(Tree *root);
