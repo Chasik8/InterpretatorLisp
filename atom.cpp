@@ -13,6 +13,9 @@ namespace LispEnv {
         bool sign = false;
         unsigned long long int i = 0;
         if (stringvalue[i] == '-') {
+            if (stringvalue.size()==1){
+                return 0;
+            }
             i = 1;
             sign = true;
         }
@@ -188,7 +191,7 @@ namespace LispEnv {
 
     Atom &Atom::operator+=(const Atom& a) {
         if (get_type() !=a.type){
-            std::cout<<"error type +="<<std::endl;
+            //std::cout<<"error type +="<<std::endl;
         }else {
             switch (type) {
                 case STRING:
@@ -200,6 +203,64 @@ namespace LispEnv {
                 case DOUBLE:
                     doublevalue +=a.doublevalue;
                     break;
+                default:
+                    std::cout<<"ERROR";
+                    break;
+            }
+        }
+        return *this;
+    }
+
+    Atom &Atom::operator-=(const Atom& a) {
+        if (get_type() !=a.type){
+            //std::cout<<"error type +="<<std::endl;
+        }else {
+            switch (type) {
+                case INT:
+                    intvalue-=a.intvalue;
+                    break;
+                case DOUBLE:
+                    doublevalue -=a.doublevalue;
+                    break;
+                default:
+                    std::cout<<"ERROR";
+                    break;
+            }
+        }
+        return *this;
+    }
+    Atom &Atom::operator*=(const Atom& a) {
+        if (get_type() !=a.type){
+            //std::cout<<"error type +="<<std::endl;
+        }else {
+            switch (type) {
+                case INT:
+                    intvalue*=a.intvalue;
+                    break;
+                case DOUBLE:
+                    doublevalue *=a.doublevalue;
+                    break;
+                default:
+                    std::cout<<"ERROR";
+                    break;
+            }
+        }
+        return *this;
+    }
+    Atom &Atom::operator/=(const Atom& a) {
+        if (get_type() !=a.type){
+            //std::cout<<"error type +="<<std::endl;
+        }else {
+            switch (type) {
+                case INT:
+                    intvalue/=a.intvalue;
+                    break;
+                case DOUBLE:
+                    doublevalue /=a.doublevalue;
+                    break;
+                default:
+                    std::cout<<"ERROR";
+                    break;
             }
         }
         return *this;
@@ -208,6 +269,22 @@ namespace LispEnv {
     Atom Atom::operator+(const Atom& a)const {
         Atom ans= Atom(*this);
         ans+=a;
+        return ans;
+    }
+
+    Atom Atom::operator-(const Atom& a)const {
+        Atom ans= Atom(*this);
+        ans-=a;
+        return ans;
+    }
+    Atom Atom::operator*(const Atom& a)const {
+        Atom ans= Atom(*this);
+        ans*=a;
+        return ans;
+    }
+    Atom Atom::operator/(const Atom& a)const {
+        Atom ans= Atom(*this);
+        ans/=a;
         return ans;
     }
 
@@ -228,4 +305,30 @@ namespace LispEnv {
                 break;
         }
     }
+
+    void Atom::print() {
+        switch(type)
+        {
+            case INT:
+                std::cout<<intvalue;
+                break;
+            case DOUBLE:
+                std::cout<<doublevalue;
+                break;
+            case STRING:
+                std::cout<<stringvalue;
+                break;
+            case NIL:
+                std::cout<<"NIL";
+                break;
+            case NULLNODE:
+                std::cout<<"NULLNODE";
+                break;
+            default:
+                std::cout<<"ERROR";
+                break;
+
+        }
+    }
+
 }

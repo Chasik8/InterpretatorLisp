@@ -20,7 +20,19 @@ namespace LispEnv {
 
     Tree *sum(Tree *args);
 
+    Tree *sub(Tree *args);
+
+    Tree *mul(Tree *args);
+
+    Tree *divv(Tree *args);
+
     Tree *passsum(Tree *args,Tree* ans);
+
+    Tree *passsub(Tree *args,Tree* ans);
+
+    Tree *passmul(Tree *args,Tree* ans);
+
+    Tree *passdivv(Tree *args,Tree* ans);
 
     extern std::unordered_map <std::string, std::function<Tree*(Tree * )>> fun ;
 

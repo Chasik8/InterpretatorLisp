@@ -105,8 +105,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/Project/C++/CLion/Interpreter_lisp/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tthz1b"
-      binary: "D:/Project/C++/CLion/Interpreter_lisp/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tthz1b"
+      source: "D:/Project/C++/CLion/Interpreter_lisp/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-s2crc7"
+      binary: "D:/Project/C++/CLion/Interpreter_lisp/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-s2crc7"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -115,10 +115,10 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: D:/Project/C++/CLion/Interpreter_lisp/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tthz1b
+        Change Dir: D:/Project/C++/CLion/Interpreter_lisp/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-s2crc7
         
-        Run Build Command(s):D:/Soft/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe -v cmTC_8648d && [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_8648d.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_8648d.dir\\ -c -- "D:\\Soft\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c"
-        [2/2] cmd.exe /C "cd . && "D:\\Soft\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_8648d.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo CMakeFiles\\cmTC_8648d.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_8648d.exe /implib:cmTC_8648d.lib /pdb:cmTC_8648d.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console   && cd ."
+        Run Build Command(s):D:/Soft/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe -v cmTC_c0a78 && [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_c0a78.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_c0a78.dir\\ -c -- "D:\\Soft\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c"
+        [2/2] cmd.exe /C "cd . && "D:\\Soft\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c0a78.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo CMakeFiles\\cmTC_c0a78.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_c0a78.exe /implib:cmTC_c0a78.lib /pdb:cmTC_c0a78.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console   && cd ."
         
       exitCode: 0
   -
@@ -130,8 +130,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/Project/C++/CLion/Interpreter_lisp/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-atpkwo"
-      binary: "D:/Project/C++/CLion/Interpreter_lisp/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-atpkwo"
+      source: "D:/Project/C++/CLion/Interpreter_lisp/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zot51w"
+      binary: "D:/Project/C++/CLion/Interpreter_lisp/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zot51w"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -140,10 +140,10 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: D:/Project/C++/CLion/Interpreter_lisp/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-atpkwo
+        Change Dir: D:/Project/C++/CLion/Interpreter_lisp/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zot51w
         
-        Run Build Command(s):D:/Soft/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe -v cmTC_25c05 && [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -TP   /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_25c05.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_25c05.dir\\ -c -- "D:\\Soft\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
-        [2/2] cmd.exe /C "cd . && "D:\\Soft\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_25c05.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo CMakeFiles\\cmTC_25c05.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_25c05.exe /implib:cmTC_25c05.lib /pdb:cmTC_25c05.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console   && cd ."
+        Run Build Command(s):D:/Soft/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe -v cmTC_54947 && [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -TP   /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_54947.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_54947.dir\\ -c -- "D:\\Soft\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
+        [2/2] cmd.exe /C "cd . && "D:\\Soft\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_54947.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo CMakeFiles\\cmTC_54947.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_54947.exe /implib:cmTC_54947.lib /pdb:cmTC_54947.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console   && cd ."
         
       exitCode: 0
   -
@@ -158,8 +158,8 @@ events:
     checks:
       - "Detecting CXX compile features"
     directories:
-      source: "D:/Project/C++/CLion/Interpreter_lisp/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-n8zvjp"
-      binary: "D:/Project/C++/CLion/Interpreter_lisp/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-n8zvjp"
+      source: "D:/Project/C++/CLion/Interpreter_lisp/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wce2dw"
+      binary: "D:/Project/C++/CLion/Interpreter_lisp/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wce2dw"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -168,10 +168,10 @@ events:
       variable: "CMAKE_CXX_FEATURE_TEST"
       cached: true
       stdout: |
-        Change Dir: D:/Project/C++/CLion/Interpreter_lisp/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-n8zvjp
+        Change Dir: D:/Project/C++/CLion/Interpreter_lisp/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wce2dw
         
-        Run Build Command(s):D:/Soft/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe -v cmTC_92a26 && [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -TP   /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -MDd -Zi   -std:c++14 /showIncludes /FoCMakeFiles\\cmTC_92a26.dir\\feature_tests.cxx.obj /FdCMakeFiles\\cmTC_92a26.dir\\ -c -- D:\\Project\\C++\\CLion\\Interpreter_lisp\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-n8zvjp\\feature_tests.cxx
-        [2/2] cmd.exe /C "cd . && "D:\\Soft\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_92a26.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo CMakeFiles\\cmTC_92a26.dir\\feature_tests.cxx.obj  /out:cmTC_92a26.exe /implib:cmTC_92a26.lib /pdb:cmTC_92a26.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s):D:/Soft/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe -v cmTC_bbaaa && [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -TP   /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -MDd -Zi   -std:c++14 /showIncludes /FoCMakeFiles\\cmTC_bbaaa.dir\\feature_tests.cxx.obj /FdCMakeFiles\\cmTC_bbaaa.dir\\ -c -- D:\\Project\\C++\\CLion\\Interpreter_lisp\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-wce2dw\\feature_tests.cxx
+        [2/2] cmd.exe /C "cd . && "D:\\Soft\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_bbaaa.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo CMakeFiles\\cmTC_bbaaa.dir\\feature_tests.cxx.obj  /out:cmTC_bbaaa.exe /implib:cmTC_bbaaa.lib /pdb:cmTC_bbaaa.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -186,8 +186,8 @@ events:
     checks:
       - "Detecting CXX compile features"
     directories:
-      source: "D:/Project/C++/CLion/Interpreter_lisp/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ryqmlr"
-      binary: "D:/Project/C++/CLion/Interpreter_lisp/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ryqmlr"
+      source: "D:/Project/C++/CLion/Interpreter_lisp/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-099lm6"
+      binary: "D:/Project/C++/CLion/Interpreter_lisp/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-099lm6"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -196,10 +196,10 @@ events:
       variable: "CMAKE_CXX_FEATURE_TEST"
       cached: true
       stdout: |
-        Change Dir: D:/Project/C++/CLion/Interpreter_lisp/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ryqmlr
+        Change Dir: D:/Project/C++/CLion/Interpreter_lisp/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-099lm6
         
-        Run Build Command(s):D:/Soft/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe -v cmTC_2614d && [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -TP   /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_2614d.dir\\feature_tests.cxx.obj /FdCMakeFiles\\cmTC_2614d.dir\\ -c -- D:\\Project\\C++\\CLion\\Interpreter_lisp\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-ryqmlr\\feature_tests.cxx
-        [2/2] cmd.exe /C "cd . && "D:\\Soft\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_2614d.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo CMakeFiles\\cmTC_2614d.dir\\feature_tests.cxx.obj  /out:cmTC_2614d.exe /implib:cmTC_2614d.lib /pdb:cmTC_2614d.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s):D:/Soft/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe -v cmTC_8029e && [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -TP   /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_8029e.dir\\feature_tests.cxx.obj /FdCMakeFiles\\cmTC_8029e.dir\\ -c -- D:\\Project\\C++\\CLion\\Interpreter_lisp\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-099lm6\\feature_tests.cxx
+        [2/2] cmd.exe /C "cd . && "D:\\Soft\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_8029e.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo CMakeFiles\\cmTC_8029e.dir\\feature_tests.cxx.obj  /out:cmTC_8029e.exe /implib:cmTC_8029e.lib /pdb:cmTC_8029e.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
 ...

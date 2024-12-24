@@ -5,7 +5,10 @@
 namespace LispEnv {
     std::unordered_map <std::string, std::function<Tree*(Tree * )>> fun ={
             // надо будет придумать какой-то флаг типо #, что можно было использовать строку +
-            {"+", sum}
+            {"+", sum},
+            {"-", sub},
+            {"*", mul},
+            {"/", divv}
     };
     std::unordered_map <std::string, Tree * > global_value;
 // надо бы избавится от pair, нужен флаг, что была операция, так как после нее надо заменить iter в sum а iter.root()
@@ -53,6 +56,91 @@ namespace LispEnv {
         }else{
             passsum(args->get_left(),ans);
             passsum(args->get_right(),ans);
+        }
+        return ans;
+    }
+    Tree *sub(Tree *args) {
+        if (args->get_data()->get_type() != NIL) {
+            return args;
+        }
+        Tree *iter = args->get_left();
+        while (iter->get_data()->get_type() == NIL) {
+            iter = iter->get_left();
+        }
+        auto ans_solution=solution(iter);
+        args->get_root()->copy_data(ans_solution.first);
+        if (ans_solution.second){
+            iter=iter->get_root();
+        }
+        while (iter!=args){
+            passsub(iter->get_root()->get_right(),args->get_root());
+            iter=iter->get_root();
+        }
+        return args;
+    }
+    Tree *passsub(Tree *args, Tree* ans) {
+        if (args->get_left()==nulltree){
+            ans->set_data(*ans->get_data() - *args->get_data());
+        }else{
+            passsub(args->get_left(),ans);
+            passsub(args->get_right(),ans);
+        }
+        return ans;
+    }
+
+    Tree *mul(Tree *args) {
+        if (args->get_data()->get_type() != NIL) {
+            return args;
+        }
+        Tree *iter = args->get_left();
+        while (iter->get_data()->get_type() == NIL) {
+            iter = iter->get_left();
+        }
+        auto ans_solution=solution(iter);
+        args->get_root()->copy_data(ans_solution.first);
+        if (ans_solution.second){
+            iter=iter->get_root();
+        }
+        while (iter!=args){
+            passmul(iter->get_root()->get_right(),args->get_root());
+            iter=iter->get_root();
+        }
+        return args;
+    }
+    Tree *passmul(Tree *args, Tree* ans) {
+        if (args->get_left()==nulltree){
+            ans->set_data(*ans->get_data() * *args->get_data());
+        }else{
+            passmul(args->get_left(),ans);
+            passmul(args->get_right(),ans);
+        }
+        return ans;
+    }
+    Tree *divv(Tree *args) {
+        if (args->get_data()->get_type() != NIL) {
+            return args;
+        }
+        Tree *iter = args->get_left();
+        while (iter->get_data()->get_type() == NIL) {
+            iter = iter->get_left();
+        }
+        auto ans_solution=solution(iter);
+        args->get_root()->copy_data(ans_solution.first);
+        if (ans_solution.second){
+            iter=iter->get_root();
+        }
+        while (iter!=args){
+            passdivv(iter->get_root()->get_right(),args->get_root());
+            iter=iter->get_root();
+        }
+        return args;
+    }
+    Tree *passdivv(Tree *args, Tree* ans) {
+        if (args->get_left()==nulltree){
+            ans->set_data(*ans->get_data() / *args->get_data());
+        }else{
+            passdivv(args->get_left(),ans);
+            passdivv(args->get_right(),ans);
         }
         return ans;
     }

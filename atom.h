@@ -7,6 +7,7 @@
 #include <iostream>
 #include "const.h"
 #include <memory>
+#include <fstream>
 namespace LispEnv {
     enum valuetype {
         INT, DOUBLE, STRING, NIL, NULLNODE
@@ -52,13 +53,27 @@ namespace LispEnv {
 
         Atom operator+(const Atom& a)const ;
 
+        Atom operator-(const Atom& a)const ;
+
+        Atom operator/(const Atom& a)const ;
+
+        Atom operator*(const Atom& a)const ;
+
         Atom &operator+=(const Atom& a);
+
+        Atom &operator-=(const Atom& a);
+
+        Atom &operator/=(const Atom& a);
+
+        Atom &operator*=(const Atom& a);
 
         Atom(const Atom& other);
 
         Atom& operator=(const Atom& other);
 
         void define();
+
+        void print();
 
         int isnumber(long long int &num, double &dnum);
 

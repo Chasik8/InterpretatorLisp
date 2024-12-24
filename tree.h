@@ -15,7 +15,6 @@ private:
     Tree *right;
     Tree *left;
     Tree *root;
-//    bool direction = false;
 public:
     Tree(Atom *val);
 
